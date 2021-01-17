@@ -28,7 +28,7 @@ class CarClientTest {
     @Test
     void testSaveNewCar() {
 
-        CarDto carDto = CarDto.builder().carName("Clio IV").build();
+        CarDto carDto = CarDto.builder().carStyle("SEDAN").carName("Clio IV").build();
         URI uri = carClient.saveNewCar(carDto);
 
         assertNotNull(uri);
